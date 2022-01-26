@@ -281,6 +281,10 @@ textarea {
     /* border: 4px solid ; */
     box-shadow: 5px 5px 10px rgba(100, 100, 100, 0.568);
     /* border-color: hsla(0, 0%, 0%, 0.5); */
+    position: relative;
+    /* display: flex; */
+    align-items: flex-end;
+    transition: 0.4s ease-out;
     border-radius: 5px;
     margin: 15px;
 }
@@ -311,4 +315,102 @@ textarea {
 
 .grid-item--height4 {
     height: 360px;
+}
+
+.grid-item:hover {
+    transform: translateY(5px);
+}
+
+.grid-item:hover img {
+    opacity: 0.5;
+}
+
+.grid-item:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.grid-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.grid-item .info {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    text-align: center;
+    top: 45%;
+    align-self: center;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.grid-item .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 5px 15px;
+}
+
+
+/* Card buttons */
+
+.info-link {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    /* line-height: 40px; */
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    background: #F4EBD6;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    transition: all .35s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.info-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4EBD6;
+    border-radius: 8px;
+    z-index: -2;
+}
+
+.info-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #005D64;
+    transition: all 0.3s;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.info-link:hover {
+    color: #fff;
+}
+
+.info-link:hover:before {
+    width: 100%;
 }
