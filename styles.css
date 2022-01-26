@@ -82,7 +82,16 @@ textarea {
 }
 
 
-/* link */
+/* card styles */
+
+.card {
+    color: #005D64;
+    background: #F4EBD6;
+    height: 12em;
+}
+
+
+/* link animation */
 
 .cool-link-dark {
     display: inline-block;
