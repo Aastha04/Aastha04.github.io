@@ -5,7 +5,9 @@ body {
     height: 100%;
 }
 
-section {
+.home1,
+.home2,
+.contact {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -84,7 +86,7 @@ textarea {
 
 /* card styles */
 
-.card {
+.port-cards {
     color: #005D64;
     background: #F4EBD6;
     height: 12em;
