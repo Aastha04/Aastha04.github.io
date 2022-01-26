@@ -1,5 +1,5 @@
 body {
-    background: #060c0a;
+    background: #080D0C;
     overflow-x: hidden;
     color: #F4EBD6;
     height: 100%;
@@ -19,7 +19,7 @@ body {
 
 .contact-head {
     font-family: 'Lobster', cursive;
-    color: #060C0A;
+    color: #080D0C;
 }
 
 .portfolio-head {
@@ -35,7 +35,7 @@ body {
 
 .contact-des {
     margin: 0px;
-    color: #060C0A;
+    color: #080D0C;
     white-space: pre-line;
 }
 
@@ -99,7 +99,7 @@ textarea {
 .cool-link-dark {
     display: inline-block;
     cursor: pointer;
-    color: #060C0A;
+    color: #080D0C;
     text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ textarea {
     display: inline-block;
     cursor: pointer;
     margin: 0px 10px;
-    color: #060C0A;
+    color: #080D0C;
     text-decoration: none;
 }
 
